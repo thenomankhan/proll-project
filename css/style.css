@@ -1,0 +1,452 @@
+:root{
+    --Montserrat: 'Montserrat', sans-serif;
+    --Nunito: 'Nunito Sans', sans-serif;
+    --Black: #000000;
+    --Eerie-Black : #191919;
+    --Eerie-Black2 : #1d1d1d;
+    --White: #ffffff;
+    --Cultured : #F5F5F5;
+    --Ghost-White: #f8f9f9;
+    --Sonic-Silver : #787878;
+    --Robin-Egg-Blue : #10c9c3;
+}
+
+/* all common css start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+ul,ol,li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* all common css end */
+
+
+/* ========================
+    ALL COMMON CSS END
+    =========================== */
+    
+    
+    /* ========================
+        NAVBAR PART START
+    =========================== */
+    #navbar{
+        background: url(../images/banner2.png) no-repeat center/cover;
+    }
+    
+    #navbar ul {
+        gap: 20px;
+        cursor: pointer;
+    }
+    #navbar ul li a{
+        font-family: var(--Montserrat);
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--Eerie-Black);
+    }
+    #navbar ul li .active{
+        color: var(--Robin-Egg-Blue);
+    }
+    #navbar ul li a:hover{
+        color: var(--Robin-Egg-Blue);
+    }
+    
+    #navbar .banner_info{
+        margin-top: 150px;
+    }
+    #navbar .banner_info h2{
+        color: var(--Eerie-Black2);
+        font-size: 37px;
+        font-weight: 600;
+        font-family: var(--Montserrat);
+    
+    }
+    #navbar .banner_info p{
+        margin-top: 20px;
+        margin-bottom: 30px;
+        color: var(--Eerie-Black2);
+        font-size: 18px;
+        font-weight: 200;
+        line-height: 28px;
+        padding-right: 90px;
+        font-family: var(--Nunito);
+    }
+    #navbar .banner_info button {
+        background: var(--Robin-Egg-Blue);
+        border: none;
+        padding: 13px 51px;
+        color: var(--White);
+        font-size: 18px;
+        font-weight: 500;
+        font-family: var(--Montserrat);
+        margin-bottom: 100px;
+        border-radius: 10px;
+    }
+    /* ========================
+        NAVBAR PART END
+    =========================== */
+    
+    
+    /* ========================
+        ABOUT PART START
+    =========================== */
+    #about{
+        padding-top: 100px;
+        padding-bottom: 50px;
+        text-align: center;
+        justify-content: center;
+        background: var(--Ghost-White);
+    }
+    #about .about_info h2{
+        color: var(--Eerie-Black);
+        font-family: var(--Montserrat);
+        font-size: 30px;
+        font-weight: 600;
+        padding-bottom: 25px;
+    }
+    #about .about_info p{
+        color: var(--Sonic-Silver);
+        font-family: var(--Nunito);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        padding: 0 257px;
+    }
+    #about .about_info img{
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    
+    /* ========================
+    ABOUT PART END
+    =========================== */
+    
+    
+    /* ========================
+        STATUS PART START START
+    =========================== */
+    #status{
+        background: var(--Robin-Egg-Blue);
+    }
+    #status .status_iteam{
+        display: flex;
+        gap: 150px;
+        text-align: center;
+        justify-content: center;
+        padding: 50px 0;
+    }
+    #status .status_iteam .count_item{
+        color: var(--White);
+    }
+    
+    #status .status_iteam .count_item a{
+        color: var(--White);
+        font-size: 35px;
+    }
+    #status .status_iteam .count_item span{
+        font-family: var(--Montserrat);
+        font-size: 30px;
+        padding-left: 17px;
+    }
+    #status .status_iteam .count_item p{
+        font-family: var(--Montserrat);
+        font-size: 12px;
+        font-weight: 500;
+        padding-left: 17px;
+        text-transform: uppercase;
+    }
+    
+    /* ========================
+        STATUS PART END
+    =========================== */
+    /* ========================
+        GALLARY PART START
+    =========================== */
+    
+    .gallary_main .gallary_item{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .gallary_main .gallary_item .inner_item{
+        position: relative;
+    }
+    .gallary_main .gallary_item .inner_item img {
+        width: 337.2px;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .gallary_main .gallary_item .inner_item .overlay{
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: all linear .3s;
+    }
+    
+    .gallary_main .gallary_item .inner_item .overlay .icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .gallary_main .gallary_item .inner_item .overlay a{
+        color: var(--White);
+    }
+    .gallary_main .gallary_item .inner_item .overlay a i{
+        font-size: 30px;
+    }
+    
+    .gallary_main .gallary_item .inner_item:hover{
+        cursor: pointer;
+    }
+    .gallary_main .gallary_item .inner_item:hover .overlay{
+        opacity: 1;
+        visibility: visible;
+    }
+    
+    /* ========================
+        GALLARY PART END
+    =========================== */
+    
+
+/* advices start */
+#advices{
+    background: var(--Robin-Egg-Blue);
+    padding: 100px 0px;
+}
+.slider_item{
+    text-align: center;
+}
+.slider_item h3{
+    font-family: var(--Montserrat);
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: var(--White);
+    padding: 0px 145px;
+}
+.slider_item p{
+    font-family: var(--Montserrat);
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 36px;
+    color: var(--White);
+}
+.slider_section .slick-dots{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 34px;
+    
+}
+.slider_section .slick-dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--Cultured);
+    cursor: pointer;
+    text-align: center;
+    transition: all linear .3s;
+}
+.slider_section .slick-dots li.slick-active{
+    width: 30px;
+    border-radius:8px;
+    background:var(--White);
+}
+.slider_section .slick-dots li button{
+    display: none;
+}
+/* advices end */
+/* clients start */
+
+#clints{
+    padding: 100px 0px;
+}
+.image_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* clients end */
+
+/* Need a Project start */
+
+#need_a_project{
+    background: var(--Cultured);
+    padding: 100px 0px;
+    
+}
+#need_a_project .common_heading{
+   text-align: center;
+   margin: 0px 250px;
+}
+#need_a_project .common_heading h2{
+    font-size: 30px;
+    font-family: var(--Montserrat);
+    font-weight: 600;
+}
+#need_a_project .common_heading p{
+    font-size: 16px;
+    font-family:var(--Nunito);
+    font-weight: 400;
+    line-height: 24px;
+    margin-top: 20px;
+    color: var(--Sonic-Silver );
+}
+.input_item{
+    padding-top: 20px;
+    margin: 0 auto ;
+    max-width: 800px;
+    height: auto;
+    text-align: center;
+
+}
+.input_item .name_input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+.input_item .name_input input{
+    width: 50%;
+    padding: 15px;
+    border-radius: 4px;
+    border: none;
+    resize: vertical;
+    background: var(--White);
+    font-family: var(--Nunito);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--Sonic-Silver );
+}
+.input_item .title_input {
+    margin: 20px 0px;
+}
+.input_item .title_input input{
+    width: 100%;
+    padding: 15px;
+    border-radius: 4px;
+    border: none;
+    resize: vertical;
+    background: var(--White);
+    font-family: var(--Nunito);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--Sonic-Silver );
+}
+.input_item .comment_input textarea{
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    border-radius: 4px;
+    border: none;
+    resize: vertical;
+    background: var(--White);
+    font-family: var(--Nunito);
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--Sonic-Silver );
+}
+.input_item .input_button{
+    margin-top: 30px;
+}
+.input_item .input_button a{
+    font-family: var(--Montserrat);
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 1px;
+    background: var(--Robin-Egg-Blue);
+    padding: 10px 20px;
+    color: var(--White);
+    border-radius: 5px;
+    border: 2px solid var(--Robin-Egg-Blue);
+    transition: all linear .3s;
+
+}
+.input_item .input_button a:hover{
+    color: var(--Robin-Egg-Blue);
+    background: var(--White);
+    border: 2px solid var(--Robin-Egg-Blue);
+}
+/* need project end */
+/* footer start */
+footer{
+    padding: 100px 0px;
+    background: #141414;
+}
+.footer_left {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    
+}
+.footer_left .copyright_section h3{
+    font-family: var(--Montserrat);
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--White);
+}
+.footer_left .copyright_section p{
+    font-family: var(--Nunito);
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--White);
+    margin-top: 20px;
+}
+.footer_left .contect_section{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 95px;
+}
+.contect_section a{
+    color: var(--White);
+    font-size: 15px;
+    font-family: var(--Nunito);
+    font-weight: 400;
+    line-height: 24px;
+}
+.footer_right {
+    display: flex;
+    align-items: right;
+    justify-content: space-between;
+}
+.menu_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding-left: 120px;
+}
+.menu_section li a{
+    color: var(--White);
+    font-size: 15px;
+    font-family: var(--Nunito);
+    font-weight: 500;
+    line-height: 30px;
+}
+.social_section li a{
+    color: var(--White);
+    font-size: 15px;
+    font-family: var(--Nunito);
+    font-weight: 500;
+    line-height: 30px;
+}
+/* footer end */
